@@ -3,6 +3,7 @@ import asyncio
 import json
 from dotenv import load_dotenv
 from contextlib import AsyncExitStack
+
 # Add references
 
 
@@ -22,7 +23,7 @@ async def connect_to_server(exit_stack: AsyncExitStack):
     )
 
     # Start the MCP server
-    
+
     # Create an MCP client session
 
     # List available tools
@@ -32,22 +33,22 @@ async def connect_to_server(exit_stack: AsyncExitStack):
 async def chat_loop(session):
 
     # Connect to the agents client
-    
+
 
     # List tools available on the server
-    
+
 
     # Build a function for each tool
-    
+
 
     # Create the agent
-    
+
 
     # Enable auto function calling
-    
+
 
     # Create a thread for the chat session
-    
+
 
     while True:
         user_input = input("Enter a prompt for the inventory agent. Use 'quit' to exit.\nUSER: ").strip()
@@ -71,19 +72,19 @@ async def chat_loop(session):
                 for tool_call in tool_calls:
 
                     # Retrieve the matching function tool
-                    
+
 
                     # Append the output text
-                    
-                
+
+
                 # Submit the tool call output
-                
+
         # Check for failure
         if run.status == "failed":
             print(f"Run failed: {run.last_error}")
 
         # Display the response
-        
+
 
     # Delete the agent when done
     print("Cleaning up agents:")
