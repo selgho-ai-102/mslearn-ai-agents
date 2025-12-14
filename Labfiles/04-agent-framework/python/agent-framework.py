@@ -56,12 +56,12 @@ async def process_expenses_data(prompt, expenses_data):
 
 # Create a tool function for the email functionality
 def send_email(
- to: Annotated[str, Field(description="Who to send the email to")],
- subject: Annotated[str, Field(description="The subject of the email.")],
- body: Annotated[str, Field(description="The text body of the email.")]):
-     print("\nTo:", to)
-     print("Subject:", subject)
-     print(body, "\n")
+    to: Annotated[str, Field(description="Who to send the email to")],
+    subject: Annotated[str, Field(description="The subject of the email.")],
+    body: Annotated[str, Field(description="The text body of the email.")]):
+        print("\nTo:", to)
+        print("Subject:", subject)
+        print(body, "\n")
 
 
 if __name__ == "__main__":
