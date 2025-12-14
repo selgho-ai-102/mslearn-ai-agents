@@ -7,7 +7,7 @@ SHELL ["/bin/bash", "-c"]
 #################################################
 # DOCKERIFLE ARGs
 #################################################
-ARG PYTHON_VERSION=3.14.0
+ARG PYTHON_VERSION=3.12.12
 ARG PYTHON_MAJOR=3
 
 ARG TERRAFORM_VERSION="1.13.3"
